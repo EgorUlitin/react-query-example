@@ -1,9 +1,11 @@
-import { infiniteQueryOptions } from "@tanstack/react-query";
+import { infiniteQueryOptions, queryOptions } from "@tanstack/react-query";
+import { jsonApiInstance } from "../../shared/api/api-instance";
 
 export type TodoDto = {
   id: string;
   name: string;
   done: boolean;
+  userId: string;
 };
 
 export type PaginatedResult<T> = {
@@ -16,32 +18,51 @@ export type PaginatedResult<T> = {
   prev: number | null;
 };
 
-const BASE_URL = "http://localhost:3000";
-
 export const todoListApi = {
-  getTodoList: (
-    { page }: { page: number },
-    { signal }: { signal: AbortSignal }
-  ) => {
-    return fetch(`${BASE_URL}/tasks?_page=${page}`, {
-      signal
-    }).then(res => res.json() as Promise<PaginatedResult<TodoDto>>);
+  baseKey: "tasks",
+  getTodoListQueryOptions: () => {
+    return queryOptions({
+      queryKey: [todoListApi.baseKey],
+      queryFn: meta =>
+        jsonApiInstance<PaginatedResult<TodoDto>>(`/tasks`, {
+          signal: meta.signal
+        })
+    });
   },
-
-  //   getTodoListInfinityQueryOptions: ({ page }: { page: number }) => {
-  //     return infiniteQueryOptions({
-  //       queryKey: ["todos", { page }],
-  //       queryFn: meta => todoListApi.getTodoList({ page }, meta),
-  //     });
-  //   }
 
   getTodoListInfinityQueryOptions: () => {
     return infiniteQueryOptions({
-      queryKey: ["todos"],
-      queryFn: meta => todoListApi.getTodoList({ page: meta.pageParam }, meta),
+      queryKey: [todoListApi.baseKey],
+      queryFn: meta =>
+        jsonApiInstance<PaginatedResult<TodoDto>>(
+          `/tasks?_page=${meta.pageParam}`,
+          {
+            signal: meta.signal
+          }
+        ),
       initialPageParam: 1,
       getNextPageParam: result => result.next,
       select: result => result.pages.flatMap(page => page.data)
+    });
+  },
+
+  createTodo: (data: TodoDto) => {
+    return jsonApiInstance<TodoDto>("/tasks", {
+      method: "POST",
+      json: data
+    });
+  },
+
+  updateTodo: (id: string, data: Partial<TodoDto>) => {
+    return jsonApiInstance<TodoDto>(`/tasks/${id}`, {
+      method: "PATCH",
+      json: data
+    });
+  },
+
+  deleteTodo: (id: string) => {
+    return jsonApiInstance(`/tasks/${id}`, {
+      method: "DELETE"
     });
   }
 };

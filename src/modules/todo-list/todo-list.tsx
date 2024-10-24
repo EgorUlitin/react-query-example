@@ -1,27 +1,9 @@
-import { useInfiniteQuery } from "@tanstack/react-query";
-import { todoListApi } from "./api";
-import { useState } from "react";
-import { useIntersection } from "../../shared/hooks/useIntersection";
+import { useTodoList } from "./use-todo-list";
+import { useCreateTodo } from "./use-create-todo";
 
 export const TodoList = () => {
-  const [enabled, setEnabled] = useState();
-
-  const cursorRef = useIntersection(() => {
-    fetchNextPage();
-  });
-
-  const {
-    data: todoItems,
-    error,
-    isLoading,
-    isPlaceholderData,
-    fetchNextPage,
-    hasNextPage,
-    isFetchingNextPage
-  } = useInfiniteQuery({
-    ...todoListApi.getTodoListInfinityQueryOptions(),
-    enabled: enabled
-  });
+  const { todoItems, isLoading, error } = useTodoList();
+  const createTodo = useCreateTodo();
 
   if (isLoading) {
     return <div>Loading....</div>;
@@ -35,20 +17,26 @@ export const TodoList = () => {
     <div className="p-5 mx-auto max-w-[1200px] mt-10">
       <h1 className="text-3xl font-bold underline mb-5">Todo List!</h1>
 
-      <div
-        className={
-          "flex flex-col gap-4" + (isPlaceholderData ? " opacity-50" : "")
-        }
-      >
+      <form className="flex gap-2 mb-5" onSubmit={createTodo.handleCreate}>
+        <input
+          className="rounded p-2 border border-teal-500"
+          type="text"
+          name="name"
+        />
+        <button
+          disabled={createTodo.isPanding}
+          className="rounded p-2 border border-teal-500 disabled:opacity-50"
+          type="submit"
+        >
+          Создать
+        </button>
+      </form>
+      <div className="flex flex-col gap-4">
         {todoItems?.map(todo => (
           <div className="border border-slate-300 rounded p-3" key={todo.id}>
             {todo.name}
           </div>
         ))}
-      </div>
-      <div className="flex gap-2 mt-4" ref={cursorRef}>
-        {!hasNextPage && <div>Нет данных для загрузки</div>}
-        {isFetchingNextPage && <div>...Loading</div>}
       </div>
     </div>
   );
