@@ -19,12 +19,8 @@ export const TodoList = () => {
     hasNextPage,
     isFetchingNextPage
   } = useInfiniteQuery({
-    queryKey: ["todos"],
-    queryFn: meta => todoListApi.getTodoList({ page: meta.pageParam }, meta),
-    enabled: enabled,
-    initialPageParam: 1,
-    getNextPageParam: result => result.next,
-    select: result => result.pages.flatMap(page => page.data)
+    ...todoListApi.getTodoListInfinityQueryOptions(),
+    enabled: enabled
   });
 
   if (isLoading) {

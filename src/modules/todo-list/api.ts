@@ -1,3 +1,5 @@
+import { infiniteQueryOptions } from "@tanstack/react-query";
+
 export type TodoDto = {
   id: string;
   name: string;
@@ -24,5 +26,22 @@ export const todoListApi = {
     return fetch(`${BASE_URL}/tasks?_page=${page}`, {
       signal
     }).then(res => res.json() as Promise<PaginatedResult<TodoDto>>);
+  },
+
+  //   getTodoListInfinityQueryOptions: ({ page }: { page: number }) => {
+  //     return infiniteQueryOptions({
+  //       queryKey: ["todos", { page }],
+  //       queryFn: meta => todoListApi.getTodoList({ page }, meta),
+  //     });
+  //   }
+
+  getTodoListInfinityQueryOptions: () => {
+    return infiniteQueryOptions({
+      queryKey: ["todos"],
+      queryFn: meta => todoListApi.getTodoList({ page: meta.pageParam }, meta),
+      initialPageParam: 1,
+      getNextPageParam: result => result.next,
+      select: result => result.pages.flatMap(page => page.data)
+    });
   }
 };
