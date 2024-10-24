@@ -1,0 +1,504 @@
+{
+  "tasks": [
+    {
+      "id": "1cf5758b-83f5-49a8-bcdb-8619cbadd960",
+      "name": "Set personal goals",
+      "done": false
+    },
+    {
+      "id": "58052239-9c75-4003-8298-43020f3760cc",
+      "name": "Plan a family outing",
+      "done": false
+    },
+    {
+      "id": "f882beed-e138-4255-a7f9-e8eab46c1163",
+      "name": "Walk the dog",
+      "done": true
+    },
+    {
+      "id": "0e60c7a3-a333-40f6-8a1c-d5d7e23ccf06",
+      "name": "Do a puzzle",
+      "done": true
+    },
+    {
+      "id": "b991ab5b-9413-4ce3-8614-be2f9fafb81a",
+      "name": "Watch a movie",
+      "done": true
+    },
+    {
+      "id": "03416a34-549f-4777-ba12-7f095d53f52b",
+      "name": "Try a new coffee shop",
+      "done": false
+    },
+    {
+      "id": "efbb7932-d7b5-412a-bb2b-798328ef00cd",
+      "name": "Plan a game night",
+      "done": false
+    },
+    {
+      "id": "8f747c29-7fc5-4810-84c0-dd75bc5468af",
+      "name": "Build something out of wood",
+      "done": true
+    },
+    {
+      "id": "929dec0d-24e5-4d57-9898-28ccde822a20",
+      "name": "Respond to emails",
+      "done": false
+    },
+    {
+      "id": "3aade034-e630-49a4-8c2f-62dc7feae862",
+      "name": "Learn a new skill",
+      "done": true
+    },
+    {
+      "id": "d7077bd5-a493-44d6-8bc0-962b8fa1c957",
+      "name": "Make a family tree",
+      "done": false
+    },
+    {
+      "id": "ea8d203d-b42d-406e-977b-bc3addaecaab",
+      "name": "Attend team meeting",
+      "done": true
+    },
+    {
+      "id": "d3c7a2c1-1aca-406a-95b6-d00eedabebb9",
+      "name": "Visit grandparents",
+      "done": true
+    },
+    {
+      "id": "eae9b22c-340d-4ee8-bd2b-d99ba3ee3ed3",
+      "name": "Join a local sports team",
+      "done": true
+    },
+    {
+      "id": "ea231223-7e5e-445b-a2e2-65d5b87e73fd",
+      "name": "Work on a crossword puzzle",
+      "done": false
+    },
+    {
+      "id": "95574fa0-2fb4-4e87-a4ea-87d0e3f45d96",
+      "name": "Bake cookies",
+      "done": true
+    },
+    {
+      "id": "ffc0159a-6951-4343-b907-a5ebd9a09f69",
+      "name": "Create a budget",
+      "done": false
+    },
+    {
+      "id": "0af1cd5f-a5ee-4826-ac3c-e0d8145c573e",
+      "name": "Create a budget",
+      "done": true
+    },
+    {
+      "id": "0bb7592f-cda9-46c0-ad62-5eb1cc72685a",
+      "name": "Have a picnic",
+      "done": false
+    },
+    {
+      "id": "e2ab2b90-1a3e-401a-ba45-70d3f52b6094",
+      "name": "Walk the dog",
+      "done": false
+    },
+    {
+      "id": "092d3a8e-b99a-445b-80aa-8b31238f1e08",
+      "name": "Research vacation destinations",
+      "done": false
+    },
+    {
+      "id": "b2f365bf-8443-4b99-b0df-2bc66cd5ec72",
+      "name": "Make a budget plan",
+      "done": true
+    },
+    {
+      "id": "4319d43a-6339-4cdf-ae5d-7a3ec5738eef",
+      "name": "Plan a themed dinner night",
+      "done": false
+    },
+    {
+      "id": "1622401d-164f-4a9b-88c8-8a364432ba85",
+      "name": "Watch a documentary",
+      "done": true
+    },
+    {
+      "id": "70e3f46d-83f1-44b8-b445-43da7e82f963",
+      "name": "Plan meals for the week",
+      "done": false
+    },
+    {
+      "id": "e926ef6c-8c94-445d-a193-9e6523a2b62a",
+      "name": "Take a course online",
+      "done": true
+    },
+    {
+      "id": "ea986d76-c33d-48bd-9191-93ae630b29d5",
+      "name": "Make a budget plan",
+      "done": true
+    },
+    {
+      "id": "ac07e64c-4fbe-4aeb-af2c-e863d2ce8c19",
+      "name": "Explore a new park",
+      "done": false
+    },
+    {
+      "id": "156fa005-39bb-4ed9-958e-aff47522861c",
+      "name": "Create a budget",
+      "done": false
+    },
+    {
+      "id": "1b14f016-ad68-45a8-ac8e-0c9c861e96f5",
+      "name": "Grocery shopping",
+      "done": false
+    },
+    {
+      "id": "b2b4bda0-0d60-4265-b991-6e5e12af9e60",
+      "name": "Take a course online",
+      "done": false
+    },
+    {
+      "id": "1cac5600-5586-4731-84d4-8b9de69ca8d4",
+      "name": "Volunteer for a charity",
+      "done": false
+    },
+    {
+      "id": "ab4aa684-f3e1-4c19-b71a-ba04222555af",
+      "name": "Have a picnic",
+      "done": false
+    },
+    {
+      "id": "bff906c6-99ae-4fae-a082-f3f1e702b926",
+      "name": "Update resume",
+      "done": false
+    },
+    {
+      "id": "5adbe12b-f476-43d7-a19e-e2fce451c5dd",
+      "name": "Go for a bike ride",
+      "done": true
+    },
+    {
+      "id": "3d5628a3-83d1-4043-a32a-de70b8d1d9d2",
+      "name": "Watch a documentary",
+      "done": true
+    },
+    {
+      "id": "dca01261-a03a-46dc-8166-1706de658ed5",
+      "name": "Work on a crossword puzzle",
+      "done": true
+    },
+    {
+      "id": "d51ecbad-fe30-45a1-b10e-c137157dce1d",
+      "name": "Finish laundry",
+      "done": false
+    },
+    {
+      "id": "c97f7536-c24d-4246-84e6-faf626053a9f",
+      "name": "Attend a community event",
+      "done": false
+    },
+    {
+      "id": "b6b46481-7b3f-4a11-a9b9-c2a38430be43",
+      "name": "Clean the garage",
+      "done": false
+    },
+    {
+      "id": "831c9020-fb4b-475f-aaaf-4460e1d9c0c6",
+      "name": "Plan a family outing",
+      "done": false
+    },
+    {
+      "id": "33b11eaf-ca14-46cb-8752-d6ea11996a74",
+      "name": "Do a puzzle",
+      "done": true
+    },
+    {
+      "id": "028cfba8-0a25-4015-8f36-d6985050f643",
+      "name": "Start a DIY project",
+      "done": false
+    },
+    {
+      "id": "18195f7f-fbf7-4ee0-8880-83684cc85820",
+      "name": "Visit a museum",
+      "done": false
+    },
+    {
+      "id": "b9720c01-f022-455d-9374-71d128dbb6a3",
+      "name": "Attend a concert",
+      "done": true
+    },
+    {
+      "id": "8e5233ad-5a81-4071-99f0-637825637023",
+      "name": "Take a photography walk",
+      "done": true
+    },
+    {
+      "id": "6e2e8d90-a100-4b17-9502-f9cf07c782cd",
+      "name": "Visit grandparents",
+      "done": true
+    },
+    {
+      "id": "4d38c970-f481-4d2a-94a5-fe6fb620724f",
+      "name": "Update resume",
+      "done": true
+    },
+    {
+      "id": "86887f3d-65ba-4d1e-9c70-c478855bee32",
+      "name": "Attend a community event",
+      "done": false
+    },
+    {
+      "id": "ca6cb347-1ffe-4641-90aa-01a784cdd28e",
+      "name": "Submit the assignment",
+      "done": true
+    },
+    {
+      "id": "509df672-576d-494f-8c86-2a141cca5bbf",
+      "name": "Plan a surprise party",
+      "done": false
+    },
+    {
+      "id": "38d6164a-4f09-4b42-bed6-0ca16e68168d",
+      "name": "Create a digital art piece",
+      "done": true
+    },
+    {
+      "id": "124b00f8-2040-4655-9c81-f674555ea652",
+      "name": "Write a letter to a friend",
+      "done": false
+    },
+    {
+      "id": "d69c7ec0-df30-471e-a747-f1904593fe6a",
+      "name": "Plant flowers in the garden",
+      "done": true
+    },
+    {
+      "id": "2d0838b2-6f5b-49fe-bde7-dbe7f476a206",
+      "name": "Join a fitness class",
+      "done": false
+    },
+    {
+      "id": "e1f077f3-86fd-4e51-a7b1-697c76049ded",
+      "name": "Prepare dinner",
+      "done": false
+    },
+    {
+      "id": "7b04ed73-e9bb-4f7e-a570-58ae885f5605",
+      "name": "Buy groceries",
+      "done": true
+    },
+    {
+      "id": "52078926-32f3-4437-aa3d-836cb5b9ac71",
+      "name": "Create a scrapbook",
+      "done": true
+    },
+    {
+      "id": "2a096e58-0293-4575-9c28-eaa1c0928dc3",
+      "name": "Try a new recipe",
+      "done": false
+    },
+    {
+      "id": "63cf6c0e-45a9-4ba4-8a26-5e04cbe6a1b3",
+      "name": "Bake cookies",
+      "done": false
+    },
+    {
+      "id": "4aa518fa-8684-4ada-b7f0-d25bdce2a48f",
+      "name": "Finish laundry",
+      "done": false
+    },
+    {
+      "id": "2493c943-de0c-4985-b373-77d3ccb21945",
+      "name": "Join a fitness class",
+      "done": false
+    },
+    {
+      "id": "1ec96214-df2b-45c0-98a3-f9d12c1680fc",
+      "name": "Explore new recipes",
+      "done": true
+    },
+    {
+      "id": "0020d78d-5000-45fd-aceb-07b9d41bb5e2",
+      "name": "Create a time capsule",
+      "done": false
+    },
+    {
+      "id": "37f92c72-d858-47d8-a14a-0808d795a8ba",
+      "name": "Create a digital art piece",
+      "done": false
+    },
+    {
+      "id": "01db2755-d26e-40e5-9153-6b1770ada4b2",
+      "name": "Catch up with a friend",
+      "done": true
+    },
+    {
+      "id": "cdb26d8c-c9bb-4a90-8094-19b68127b69d",
+      "name": "Finish reading a novel",
+      "done": false
+    },
+    {
+      "id": "93f680ed-8c31-4083-a7f4-b98141c30f49",
+      "name": "Try out a new workout routine",
+      "done": false
+    },
+    {
+      "id": "63c58d1e-a8b4-4b30-9f78-5668a748e33d",
+      "name": "Visit a botanical garden",
+      "done": false
+    },
+    {
+      "id": "4c67eaa9-d5dc-4ebe-aa83-c36ff1a5b0a3",
+      "name": "Write a blog post",
+      "done": false
+    },
+    {
+      "id": "e616e49d-911e-4a60-a107-d731641f605a",
+      "name": "Try a new coffee shop",
+      "done": true
+    },
+    {
+      "id": "1d862a16-e557-420f-b293-a4741c9fc15e",
+      "name": "Plan weekend trip",
+      "done": true
+    },
+    {
+      "id": "19834902-ad7b-4f07-a889-0afb08f14831",
+      "name": "Clean the garage",
+      "done": false
+    },
+    {
+      "id": "ca5b35b8-d7bd-417a-8a61-047a225ec0e1",
+      "name": "Organize desk",
+      "done": true
+    },
+    {
+      "id": "7ead8630-c751-4852-a814-323e2efda555",
+      "name": "Set personal goals",
+      "done": false
+    },
+    {
+      "id": "84e4d9b6-0c22-4964-b1b8-314fc4e6e8e0",
+      "name": "Try out a new restaurant",
+      "done": true
+    },
+    {
+      "id": "02d4cb40-ab6a-4333-b4ab-482b3535d507",
+      "name": "Update resume",
+      "done": false
+    },
+    {
+      "id": "019fb987-150a-498a-ad1f-86821ab3d537",
+      "name": "Attend a painting class",
+      "done": true
+    },
+    {
+      "id": "90e0f711-3f43-4923-b010-3cda6db3a698",
+      "name": "Attend a seminar",
+      "done": false
+    },
+    {
+      "id": "49732c48-d63d-45d8-8bab-c7c827613ceb",
+      "name": "Declutter wardrobe",
+      "done": true
+    },
+    {
+      "id": "1a0562e3-2095-42f8-bf5c-96b30a186ca7",
+      "name": "Create a time capsule",
+      "done": true
+    },
+    {
+      "id": "2ee84426-4e6c-4bc4-9e6b-ff3a2d9d8e1e",
+      "name": "Exercise for 30 minutes",
+      "done": false
+    },
+    {
+      "id": "6601df7a-0e3c-41ba-bb02-258eae487abe",
+      "name": "Explore a new park",
+      "done": false
+    },
+    {
+      "id": "c8284241-9381-451b-943e-a72b98419206",
+      "name": "Take a photography walk",
+      "done": false
+    },
+    {
+      "id": "41e95ec7-fc64-47f1-bceb-c536e35e564d",
+      "name": "Start a DIY project",
+      "done": false
+    },
+    {
+      "id": "6f7a8558-6fc8-42e8-80f1-e092e7edcb47",
+      "name": "Watch a movie",
+      "done": false
+    },
+    {
+      "id": "16a9c075-23ae-43eb-bdad-fd629e15b1ef",
+      "name": "Clean the house",
+      "done": false
+    },
+    {
+      "id": "063c8eee-7eda-4b52-a088-1a92a296bd94",
+      "name": "Call the doctor",
+      "done": false
+    },
+    {
+      "id": "25f318eb-2640-4653-bf06-ac96d9aa1b0d",
+      "name": "Create a time capsule",
+      "done": false
+    },
+    {
+      "id": "7ac162a8-d794-4ad4-aeaa-47924d2fd552",
+      "name": "Volunteer at a local shelter",
+      "done": true
+    },
+    {
+      "id": "4e30eaa0-dbea-4b2b-a25f-021e8ddf4dbf",
+      "name": "Work on personal project",
+      "done": false
+    },
+    {
+      "id": "5aa5fd56-96eb-4133-ab23-848b431bc868",
+      "name": "Have a picnic",
+      "done": false
+    },
+    {
+      "id": "eecea8bf-a2fa-4086-a7d4-9476f3a3411c",
+      "name": "Set personal goals",
+      "done": false
+    },
+    {
+      "id": "a9248a57-1ae4-4855-86bb-e896f77d19bb",
+      "name": "Attend a community event",
+      "done": true
+    },
+    {
+      "id": "679abb76-b35b-4195-9815-46f0ed425b87",
+      "name": "Practice a musical instrument",
+      "done": false
+    },
+    {
+      "id": "a88ddc9f-befc-4181-a2c9-e75ad1a1791e",
+      "name": "Attend yoga class",
+      "done": true
+    },
+    {
+      "id": "8bb05a6c-2efc-4d99-aac9-25aa41c032ee",
+      "name": "Have a movie marathon",
+      "done": false
+    },
+    {
+      "id": "70be217b-4b9d-47af-84f5-dc53681c9bb9",
+      "name": "Write a letter to a friend",
+      "done": false
+    },
+    {
+      "id": "76cf50f0-1ff8-43fd-818a-309af633f12e",
+      "name": "Update social media profiles",
+      "done": false
+    },
+    {
+      "id": "dbc9e9ad-65ac-411c-a899-ec19ca7a3310",
+      "name": "Plan meals for the week",
+      "done": false
+    }
+  ]
+}
