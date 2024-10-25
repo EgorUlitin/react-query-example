@@ -1,9 +1,14 @@
 import { useTodoList } from "./use-todo-list";
 import { useCreateTodo } from "./use-create-todo";
+import { useDeleteTodo } from "./use-delete-todo";
+import { TodoDto } from "./api";
+import { useUpdateTodo } from "./use-update-todo";
 
 export const TodoList = () => {
   const { todoItems, isLoading, error } = useTodoList();
   const createTodo = useCreateTodo();
+  const deleteTodo = useDeleteTodo();
+  const updateTodo = useUpdateTodo();
 
   if (isLoading) {
     return <div>Loading....</div>;
@@ -32,9 +37,25 @@ export const TodoList = () => {
         </button>
       </form>
       <div className="flex flex-col gap-4">
-        {todoItems?.map(todo => (
-          <div className="border border-slate-300 rounded p-3" key={todo.id}>
+        {todoItems?.map((todo: TodoDto) => (
+          <div
+            className="flex border border-slate-300 rounded p-3 justify-between"
+            key={todo.id}
+          >
+            {" "}
+            <input
+              type="checkbox"
+              checked={todo.done}
+              onChange={() => updateTodo.handleUpdate(todo.id, todo.done)}
+            />{" "}
             {todo.name}
+            <button
+              disabled={deleteTodo.getIsPending(todo.id)}
+              onClick={() => deleteTodo.handleDelete(todo.id)}
+              className="text-rose-500 font-bold disabled:text-rose-300"
+            >
+              Удалить
+            </button>
           </div>
         ))}
       </div>
